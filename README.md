@@ -24,7 +24,7 @@ resource "aws_route53_zone" "default" {
 }
 
 module "cert" {
-  source = "github.com/azavea/terraform-aws-acm-certificate"
+  source = "github.com/Lighting-Construction/terraform-aws-acm-certificate"
 
   providers = {
     aws.acm_account     = "aws.certificates"
